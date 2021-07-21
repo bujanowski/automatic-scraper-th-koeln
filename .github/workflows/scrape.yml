@@ -29,6 +29,6 @@ jobs:
           timestamp=$(date -u)
           git commit -m "Latest data: ${timestamp}" &&
             export COMMIT_HASH=$(git rev-parse HEAD) &&
-            python send_mail.py ||
+            python send_mailth.py ||
             exit 0
           git push
