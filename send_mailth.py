@@ -7,7 +7,7 @@ change_url = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY')}/commit/{
 message = Mail(
     from_email=os.environ.get('FROM_EMAIL'),
     to_emails=os.environ.get('TO_EMAIL'),
-    subject='Site updated',
+    subject='Site TH Koeln updated',
     html_content=f"""
     Content attached, changes can be found at <a href="{change_url}">{change_url}</a>
     """)
